@@ -45,7 +45,7 @@ public partial class AdminAddItems : System.Web.UI.Page
 
 SqlConnection ObjCon = new SqlConnection(connStr);
 
-        String Qryinsert = "INSERT INTO Items2  VALUES (@ProductName,@ProductDescription,@Prod_qty,@Price,@Category, @Prod_image)";
+        String Qryinsert = "INSERT INTO Items  VALUES (@ProductName,@ProductDescription,@Prod_qty,@Price,@Category, @Prod_image)";
 
         SqlCommand cmd = new SqlCommand(Qryinsert, ObjCon);
 

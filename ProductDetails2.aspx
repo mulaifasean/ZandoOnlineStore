@@ -9,8 +9,7 @@
     <style>
        
         #PDet2{width:1000px;
-              height:700px;
-              background-color:deepskyblue;
+              height:700px;            
               margin-top:200px;
               margin-left:200px;
         }
@@ -36,9 +35,9 @@
                 </td>
                 <td>
               
-                     <h3 id="name1" runat="server">NIKE</h3>
-                     <h4 id="des1" runat="server">Good and well</h4>
-                     <p id="price1" runat="server">R678</p>
+                     <h3 id="name1" runat="server"></h3>
+                     <h4 id="des1" runat="server"></h4>
+                     <p id="price1" runat="server"></p>
                 </td>
             </tr>
             <tr>

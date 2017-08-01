@@ -22,13 +22,13 @@
         
        #landtbl tr td{padding:10px;}
             #landtbl tr #shop1 {
-                background-image: url(http://localhost:51680/landingPics/TL_women.png);
+                background-image: url(http://localhost:50981/landingPics/TL_women.png);
                 background-repeat:no-repeat;
               background-size:600px;
                 width:600px;
             }
             #landtbl tr #shop2 {
-                background-image: url(http://localhost:51680/landingPics/TR_Men.png);
+                background-image: url(http://localhost:50981/landingPics/TR_Men.png);
                 background-repeat:no-repeat;
                background-size:600px;
                 width:600px;
@@ -76,7 +76,7 @@
             #landtbl3 #tr3{height:350px;}
            
                 #landtbl3 #tr3 #td31 {
-                    background-image: url(http://localhost:51680/landingPics/ML_womensshoes.png);
+                    background-image: url(http://localhost:50981/landingPics/ML_womensshoes.png);
                     background-repeat: no-repeat;
                     background-size: contain;
                     height: 100%;
@@ -84,14 +84,14 @@
                     padding:10px;
                 }
                 #landtbl3 #tr3 #td32 {
-                    background-image: url(http://localhost:51680/landingPics/Get_The_App_Homepage_banner-no_cta.jpg);
+                    background-image: url(http://localhost:50981/landingPics/Get_The_App_Homepage_banner-no_cta.jpg);
                     background-repeat: no-repeat;
                     background-size: contain;
                     height: 100%;
                     width: 380px;
                 }
                 #landtbl3 #tr3 #td33 {
-                    background-image: url(http://localhost:51680/landingPics/MR_mensshoes2.jpg);
+                    background-image: url(http://localhost:50981/landingPics/MR_mensshoes2.jpg);
                     background-repeat: no-repeat;
                     background-size: contain;
                     height: 100%;
@@ -152,10 +152,10 @@
     <table id="landtbl">
         <tr id="tr1">
             <td class="shop" id="shop1">
-             <input id="sw" type="button" value="SHOP WOMEN" />  
+             <input id="sw" type="button" onclick="window.location('WOMEN.aspx')" value="SHOP WOMEN" />  
             </td>
             <td class="shop" id="shop2" >
-               <input id="sm"  type="button" value="SHOP MEN" /></td>
+               <input id="sm"  type="button" onclick="window.location('MEN.aspx')" value="SHOP MEN" /></td>
         </tr>
        
        

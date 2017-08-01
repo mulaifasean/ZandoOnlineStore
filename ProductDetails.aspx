@@ -33,7 +33,7 @@
               
                      <h3 id="name1" runat="server"></h3>
                      <h4 id="des1" runat="server"></h4>
-                     R<p id="price1" runat="server"></p>
+                     <p id="price1" runat="server"></p>
                 </td>
             </tr>
             <tr>

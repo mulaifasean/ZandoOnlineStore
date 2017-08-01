@@ -16,7 +16,7 @@
       }
        #Menmast tr td p a:hover{font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
          .TM {
-             background-image: url(http://localhost:51680/WOMENPICS/w1.jpg);
+             background-image: url(http://localhost:50981/WOMENPICS/w1.jpg);
              background-repeat: no-repeat;
              background-size: contain;
          }
@@ -27,7 +27,7 @@
               top:150px;    
       }
          .TM2 {
-             background-image: url(http://localhost:51680/WOMENPICS/w2.jpg);
+             background-image: url(http://localhost:50981/WOMENPICS/w2.jpg);
              background-repeat: no-repeat;
              background-size: contain;
          }
@@ -41,7 +41,7 @@
              width:250px;
       }
          .TM3 {
-             background-image: url(http://localhost:51680/WOMENPICS/w3.jpg);
+             background-image: url(http://localhost:50981/WOMENPICS/w3.jpg);
              background-repeat: no-repeat;
              background-size: contain;
              width: 100%;
@@ -96,7 +96,58 @@
   color:white;
 }
 .Dd{margin-left:20px;}
+
+#TP{width:1300px;
+  margin-left:50px;
+}
+#TP1{width:400px;height:1000px;}
+#TP2{width:800px;height:1200px;}
+#TP1 p a{text-decoration:none;color:black;}
+#TP1 h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:15px;}
+.Apply{background-color:black;color:white;width:70px;height:50px;border:none;}
+.Apply:hover{background-color:white;color:black;border:2px solid black;}
   </style>
+    <script>
+
+        $(document).ready(function () {
+            $("h1").click(function () {
+                $("p").toggle();
+            });
+        });
+        //For 2nd
+        $(document).ready(function () {
+            $("h2").click(function () {
+                $("#brandy").toggle();
+            });
+        });
+
+        $(document).ready(function () {
+            $("h3").click(function () {
+                $("#colus").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("h4").click(function () {
+                $("#prc").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("h5").click(function () {
+                $("#fit").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("h6").click(function () {
+                $("#heel").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("h5").click(function () {
+                $(".chk").toggle();
+            });
+        });
+    
+    </script>
 
       <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -207,7 +258,7 @@ function topFunction() {
         </tr>
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA11.jpg); 
+                <div  style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA11.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -218,7 +269,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA12.jpg); 
+                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA12.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -228,7 +279,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA13.jpg); 
+                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA13.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -241,7 +292,7 @@ function topFunction() {
 
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA21.jpg); 
+                <div  style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA21.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -252,7 +303,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA22.jpg); 
+                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA22.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -262,7 +313,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:51680/MenMasterPics/Women/FA23.jpg); 
+                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA23.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -352,8 +403,105 @@ function topFunction() {
                 </td>
             </tr>
         </table>
-    <asp:ContentPlaceHolder runat="server" ID="WomenCotentPlaceHolder">
 
-    </asp:ContentPlaceHolder>
+    <table id="TP">
+        <tr>
+            <td id="TP1">
+                <h1>TOP CATEGORIES <span class="fa fa-caret-right" ></span></h1>
+                <p>
+                    <a href="#">Shoes</a><br />
+                    <a href="#"> Clothing</a><br />
+                    <a href="#">Accessories</a><br />
+                    <a href="#">Beauty</a>
+                </p>
+
+                <h2>BRAND <span class="fa fa-caret-right" ></span></h2>
+                <div id="brandy">
+                    <p>
+                        <asp:TextBox  runat="server" placeholder="Search..."  ID="brsearch" ></asp:TextBox>
+                        <asp:Button  runat="server"  CssClass="glyphicon-search" />
+                    </p>
+                   <asp:CheckBoxList runat="server" CssClass="chk">
+                        <asp:ListItem>7 For All mankind (1)</asp:ListItem>
+                        <asp:ListItem>47 Brand (1)</asp:ListItem>
+                        <asp:ListItem>Adam and Eve (3)</asp:ListItem>
+                        <asp:ListItem>addidas (65)</asp:ListItem>
+                        <asp:ListItem>addidas Accessories (6)</asp:ListItem>
+                        <asp:ListItem>addidas Performance(73)</asp:ListItem>
+                        <asp:ListItem>African Extracts(6)</asp:ListItem>
+                       <asp:ListItem>African Splendor(5)</asp:ListItem>
+                       <asp:ListItem>Afriderm(4)</asp:ListItem>
+                       <asp:ListItem>Afrodizzy(3)</asp:ListItem>
+                       <asp:ListItem>Agent Provocateur(43)</asp:ListItem>
+                       <asp:ListItem>AKAN organics (3)</asp:ListItem>
+                       <asp:ListItem>ALDO (260)  </asp:ListItem>
+                       <asp:ListItem>Alesio Nesca (1)</asp:ListItem>
+                       <asp:ListItem>All About Eve (38)</asp:ListItem>
+                       <asp:ListItem> All Heart (175)</asp:ListItem>
+                       <asp:ListItem> Almay (25)</asp:ListItem>
+                       <asp:ListItem> Amanda May (17)</asp:ListItem>
+                   </asp:CheckBoxList>
+
+                   
+                    
+                    <asp:Button runat="server" Text="Apply" CssClass="Apply" />
+                </div>
+                <h3>COLOUR <span class="fa fa-caret-right" ></span></h3>
+                <div id="colus">
+
+                </div>
+                  <h4>PRICE <span class="fa fa-caret-right" ></span></h4>
+                  <div id="prc">
+                      <asp:TextBox runat="server" placeholder="19" Width="50"></asp:TextBox>
+                      <asp:TextBox runat="server" placeholder="4499" Width="50"></asp:TextBox><br />
+                      <asp:Button  runat="server" Text="Apply" CssClass="Apply"/>
+                  </div>
+                 <h5>FIT <span class="fa fa-caret-right" ></span></h5>
+                <div id="fit">
+                  <asp:CheckBox runat="server"  Text="Maternity" /><br />
+                    <asp:CheckBox runat="server"  Text="Petites" /><br />
+                    <asp:CheckBox runat="server" Text="Plus-size"  />
+                </div>
+
+                 <h6>HEEL HEIGHT <span class="fa fa-caret-right" ></span></h6>
+                <div id="heel">
+                  <asp:CheckBox runat="server"  Text="High" /><br />
+                    <asp:CheckBox runat="server"  Text="Low" /><br />
+                    <asp:CheckBox runat="server" Text="Mid"  />
+                </div>
+                <h5>MATERIAL</h5>
+                <asp:CheckBoxList runat="server" CssClass="chk">
+                        <asp:ListItem>100% Cotton</asp:ListItem>
+                        <asp:ListItem>Acrylic</asp:ListItem>
+                        <asp:ListItem> Canvas</asp:ListItem>
+                        <asp:ListItem> Cotton</asp:ListItem>
+                        <asp:ListItem> Denim</asp:ListItem>
+                        <asp:ListItem>Gold</asp:ListItem>
+                        <asp:ListItem>Leather</asp:ListItem>
+                       <asp:ListItem>Linen</asp:ListItem>
+                       <asp:ListItem>Mesh</asp:ListItem>
+                       <asp:ListItem>Metal</asp:ListItem>
+                       <asp:ListItem> Nylon</asp:ListItem>
+                       <asp:ListItem>Other</asp:ListItem>
+                       <asp:ListItem>PU</asp:ListItem>
+                       <asp:ListItem>Polyester</asp:ListItem>
+                       <asp:ListItem>Silk</asp:ListItem>
+                       <asp:ListItem>Suede</asp:ListItem>
+                       <asp:ListItem>Viscose</asp:ListItem>
+                       <asp:ListItem>Wool</asp:ListItem>
+                   </asp:CheckBoxList>
+
+            </td>
+            <td id="TP2">
+
+     <asp:ContentPlaceHolder runat="server" ID="WomenCotentPlaceHolder">
+
+     </asp:ContentPlaceHolder>
+
+            </td>
+        </tr>
+
+    </table>
+   
 </asp:Content>
 

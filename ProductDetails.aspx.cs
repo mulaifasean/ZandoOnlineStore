@@ -29,7 +29,7 @@ public partial class ProductDetails : System.Web.UI.Page
             {
                 name1.InnerText = reader["ProductName"].ToString();//name
                 des1.InnerText = reader["ProductDescription"].ToString();//desc
-                price1.InnerText = reader["Price"].ToString();//price
+                price1.InnerText ="R"+ reader["Price"].ToString();//price
                 mg1.ImageUrl = reader["prod_image"].ToString();//image
                 pd1.HRef = reader["prod_image"].ToString();
             }
