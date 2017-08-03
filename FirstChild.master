@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Manager.master" AutoEventWireup="true" CodeFile="FirstChild.master.cs" Inherits="FirstChild" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+   <style>
+       #UL1{background-color:black; width:100%;}
+       #UL1 li a {color:white;}
+       #UL1 li a:hover{color:white;background-color:black;}
+       footer table{width:100%;
+                    height:200px;
+                    background-color:darkgray;
+                    text-align:center;
+                    
+       }
+       footer table tr td{width:20%;}
+       footer table tr td span img{width:100px;
+                                   height:80px;
+       }
+        footer table tr td  img{width:80px;
+                                   height:60px;
+       }
+         footer table tr td span a:hover{color:#ff6a00;
+       }
+          footer table tr td a img:hover{color:#ff6a00;
+       }
+          table tr td a{color:#808080;
+                        text-decoration:none;
+          }
+          table tr td a:hover{text-decoration:none;
+          }
+   </style>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
+    <ul id="UL1" class="nav navbar-nav">
+        <li><a href="Dealspage.aspx">All Deals</a></li>
+         <li><a href="About.aspx">About</a></li>
+        
+        
+    </ul>
+     
+    <asp:ContentPlaceHolder  ID="FirstChildPlaceHolder" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <footer>
+        <table>
+            <tr>
+                <td style="font-weight:bolder;">ZANDO DEALS</td>
+                <td style="font-weight:bolder;">PAYMENT METHODS</td>
+                <td style="font-weight:bolder;">SECURITY</td>
+            </tr>
+            <tr>
+                <td><a href="#">ABOUT US</a></td>
+                <td><a href="#">
+                    <span>
+                        <img src="DealsFooterIcons/if_visa_184329.png"  /></span>
+                    <span>
+                        <img src="DealsFooterIcons/mastercard-128.png" /></span>
+                    <span>
+                        <img src="DealsFooterIcons/amex_copyrighted-128.png" /></span>
+                    </a></td>
+                <td>
+                    <img src="DealsFooterIcons/digi.png" />
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">DELIVERY POLICY</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">TERMS AND CONDITIONS</a></td>
+                <td></td>
+                <td>
+                    <img src="DealsFooterIcons/fullvisaAme.png" width="400" height="240" />
+                   </td>
+            </tr>
+            <tr>
+                <td><a href="#">WORK WITH US</a></td>
+                <td style="font-weight:bolder;">CONNECT WITH US</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">CONTACT US</a></td>
+                <td>
+                    <a href="#">
+                        <img src="DealsFooterIcons/social-facebook-128.png" /></a>
+                    <a href="#">
+                        <img src="DealsFooterIcons/social_media_social_media_logo_twitter-128.png" /></a>
+                    <a href="#">
+                        <img src="DealsFooterIcons/instagram-120.png" /></a>
+                    <a href="#">
+                        <img src="DealsFooterIcons/youtube-128.png" /></a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">HELP CENTER</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                     &copy;2012-2017  ZANDO.CO.ZA  |  ALL RIGHTS RESERVED
+                </td>
+                <td></td>
+            </tr>
+            
+        </table>
+
+    </footer>
+   
+</asp:Content>
+

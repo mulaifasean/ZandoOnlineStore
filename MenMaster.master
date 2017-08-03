@@ -1,0 +1,358 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ChildMaster.master" AutoEventWireup="true" CodeFile="MenMaster.master.cs" Inherits="MenMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ChildContentPlaceHolder" Runat="Server">
+  <style>
+      #Menmast{width:1100px;
+               height:500px;
+               
+               margin-left:220px;
+               margin-top:100px;
+      }
+      #Menmast tr td{width:340px;padding:40px;}
+      #Menmast tr td p a{color:black;
+                         text-decoration:none;
+                         
+      }
+       #Menmast tr td p a:hover{font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
+      .TM {
+          background-image: url(http://localhost:51680/MenMasterPics/MenMasterTopPics/men_topmiddletop_2hrdeals.jpg);
+          background-repeat:no-repeat;
+          background-size:contain;
+      }
+      .TM span{margin-left:40%;
+              background-color:white;
+              color:black;
+              position:relative;
+              top:150px;   
+      }
+       .TM span:hover{background-color:black;
+                      color:white;
+       }
+      .TM2 {
+          background-image: url(http://localhost:51680/MenMasterPics/MenMasterTopPics/men_top_mid_bottom_newlook.jpg);
+          background-repeat:no-repeat;
+          background-size:contain;
+      }
+       .TM2 #mid{margin-left:25px;
+              background-color:white;
+              color:black;
+              text-decoration:none;
+              text-align:center;
+             position:relative;
+             top:140px;
+             width:250px;
+      }
+      .TM3 {
+          background-image: url(http://localhost:51680/MenMasterPics/MenMasterTopPics/mens_topright_winter_eos.jpg);
+           background-repeat:no-repeat;
+          background-size:contain;
+          width:100%;
+      }
+      .TM3 span{margin-left:30%;
+              background-color:white;
+              color:black;
+              position:relative;
+             top:420px;
+             width:250px;
+             height:150px;
+      }
+          .TM3 span:hover {
+              background-color: black;
+              color: white;
+              
+          }
+
+          /*For        the      Second            table*/
+           #Menmast2{width:1100px;
+               margin-left:200px;
+               margin-top:50px;
+      }
+     #Menmast2 tr {height:150px;}
+     #Menmast2 tr td{width:200px;padding:20px;}
+     #Menmast2 #FR td div:hover{opacity:0.8;}
+     #Menmast2 tr td div a{color:white;text-align:center;}
+     #Menmast2 tr td div a:hover{text-decoration:none;}
+
+     /*For TOP BUTTON*/
+
+     #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  opacity:0.8;
+}
+
+#myBtn:hover {
+  background-color: black;
+  color:white;
+}
+.Dd{margin-left:20px;}
+  </style>
+
+    <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <table id="Menmast">
+        <tr>
+            <td style="">
+                <h3>TOP CATEGORIES</h3>
+                <p><a href="#">CLOTHING</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+
+                <p><a href="#">SHOES</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a href="#">ACCESSORIES</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a href="#">BEAUTY</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a href="#">SPORTS</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a style="color:red;" href="#">SALE</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a style="color:#0094ff;" href="#">NEW ARRIVALS</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <br />
+                <h4>DISCOVER</h4>
+                <p><a href="#">THE WINTER COLLECTION</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+            </td>
+            <td style="">
+             
+                
+                <asp:LinkButton runat="server"  Width="300" Height="250" CssClass="TM" >
+             <span>SHOP NOW</span>
+                </asp:LinkButton>
+                 <asp:LinkButton runat="server"  Width="300" Height="250" CssClass="TM2" >
+                     <div id="mid">
+                         <h2 style="font-size:18px;text-decoration:none;">NEW LOOK</h2>
+                         <p style="font-size:12px;color:lightgray;">The Latest Trends In A Way That Suits You</p>
+                     </div>
+             
+                </asp:LinkButton>
+            </td>
+            <td style="">
+                 <asp:LinkButton runat="server"  Width="700" Height="480" CssClass="TM3" >
+             <span>SHOP NOW</span>
+                </asp:LinkButton>
+            </td>
+        </tr>
+
+    </table>
+
+    <table id="Menmast2">
+        <tr id="FR">
+           <td >
+               <div style="background-color:black;">
+          <a   href="#">
+                   <p style="font-size:18px;">ZANDO DEALS</p>
+                   <span style="">  _____________________________________</span>
+                   <p style="font-size:14px;">Up to 80%,limited time only›</p>
+               </a>
+               </div>
+              
+           </td>
+            <td >
+                <div style="background-color:#0094ff;">
+  <a   href="#">
+                   <p style="font-size:18px;">GET THE ZANDO APP NOW</p>
+                   <span>______________________________________</span>
+                   <p style="font-size:14px;">Fashion at your fingertips!›</p>
+               </a>
+                </div>
+             
+            </td>
+            <td  >
+                <div style="background-color:black;">
+                 <a  href="#">
+                   <p style="font-size:18px;">WATCHES</p>
+                   <span>________________________________________</span>
+                   <p style="font-size:14px;">Hook Your Wrist Up!› </p>
+               </a>
+                </div>
+               
+            </td>
+        </tr>
+
+        <tr style="height:100px;">
+            <td>_______________________________________</td>
+            <td style="text-align:center;font-weight:bold;">SHOP OUR FAVOURITES</td>
+            <td>_______________________________________</td>
+        </tr>
+        <tr>
+            <td>
+                <div  style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA11.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            
+            <td>
+                <div style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA12.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA13.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div  style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA21.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            
+            <td>
+                <div style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA22.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div style="background-image: url(http://localhost:51680/MenMasterPics/Men/FA23.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})" >SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+         <tr style="height:100px;">
+            <td>_______________________________________</td>
+            <td style="text-align:center;font-weight:bold;">TOP BRANDS</td>
+            <td>_______________________________________ 
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="	fa fa-arrow-up"></span></button></td>
+        </tr>
+
+      
+     </table>
+         
+        <table style="margin-left:220px;">
+         <tr>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR11.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR12.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR13.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR14.jpg"  width="270"/>
+                </a>
+            </td>
+        </tr>
+
+             <tr>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR21.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR22.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR23.jpg" width="270" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="MenMasterPics/Men/BR24.jpg"  width="270"/>
+                </a>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <asp:DropDownList  CssClass="Dd" runat="server" ID="brands" Font-Bold="true" Width="210">
+                        <asp:ListItem>BRAND</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="size" Font-Bold="true" Width="210">
+                        <asp:ListItem>SIZE</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="pricez" Font-Bold="true" Width="210">
+                        <asp:ListItem>PRICE</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="zortby" Font-Bold="true" Width="210">
+                        <asp:ListItem>SORT BY</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+    <asp:ContentPlaceHolder runat="server" ID="MenContentPlaceHolder">
+
+    </asp:ContentPlaceHolder>
+    
+</asp:Content>
+

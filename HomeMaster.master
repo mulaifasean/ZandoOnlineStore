@@ -1,0 +1,331 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ChildMaster.master" AutoEventWireup="true" CodeFile="HomeMaster.master.cs" Inherits="HomeMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ChildContentPlaceHolder" Runat="Server">
+
+
+         <style>
+      #Menmast{width:1100px;
+               height:500px;
+               margin-left:220px;
+               margin-top:100px;
+      }
+      #Menmast tr td{width:340px;padding:40px;}
+      #Menmast tr td p a{color:black;
+                         text-decoration:none;                      
+      }
+       #Menmast tr td p a:hover{font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
+             .TM {
+                 background-image: url(http://localhost:51680/HomePics/home-top-middle-TEXTURES.jpg);
+                 background-repeat: no-repeat;
+                 background-size: contain;
+             }
+      .TM span{margin-left:40%;
+              background-color:white;
+              color:black;
+              position:relative;
+              top:150px;    
+      }
+             .TM2 {
+                 background-image: url(http://localhost:51680/HomePics/home-bottom-middle-RAW.jpg);
+                 background-repeat: no-repeat;
+                 background-size: contain;
+             }
+       .TM2 #mid{margin-left:25px;
+              background-color:white;
+              color:black;
+              text-decoration:none;
+              text-align:center;
+             position:relative;
+             top:140px;
+             width:250px;
+      }
+       .TM2 :hover{zoom:1;}
+             .TM3 {
+                 background-image: url(http://localhost:51680/HomePics/home-top-right-LINEN.jpg);
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 width: 100%;
+             }
+      .TM3 span{margin-left:20%;
+              background-color:white;
+              color:black;
+              position:relative;
+             top:110px;
+             width:250px;
+             height:150px;
+      }
+      .TM span:hover{background-color:black;
+                      color:white;
+       }
+       .TM3 span:hover {
+              background-color: black;
+              color: white;   
+          }
+         /*For     the      Second      table*/
+           #Menmast2{width:1100px;
+               margin-left:200px;
+               margin-top:50px;
+      }
+     #Menmast2 tr {height:150px;}
+     #Menmast2 tr td{width:200px;padding:20px;}
+     #Menmast2 #FR td div:hover{opacity:0.8;}
+     #Menmast2 tr td div a{color:white;text-align:center;}
+     #Menmast2 tr td div a:hover{text-decoration:none;}
+
+     /*For TOP BUTTON*/
+
+     #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  opacity:0.8;
+}
+
+#myBtn:hover {
+  background-color: black;
+  color:white;
+}
+.Dd{margin-left:20px;}
+
+#hm{width:1100px;margin-left:200px;}
+#hm tr {height:200px;}
+#hm tr td{width:350px;padding:10px;}
+#Bra{width:1100px;margin-left:170px;}
+#Bra tr {height:250px;}
+#Bra tr td{width:150px;}
+  </style>
+
+      <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <table id="Menmast">
+        <tr>
+            <td style="">
+                <h3>TOP CATEGORIES</h3>
+                <p><a href="#">Home Living Gifts</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+
+                <p><a href="#">Bed & Bath</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a href="#">Lighting</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a href="#">Kids Bed & Bath</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                
+                <br />
+                <h4>DISCOVER</h4>
+                <p><a style="color:#b200ff;" href="#">NEW ARRIVALS</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                <p><a style="color:red;" href="#">SALE</a></p>
+                <span style="color:lightgrey;">_________________________________</span>
+                
+               
+            </td>
+            <td style="">
+             
+                
+                <asp:LinkButton runat="server"  Width="300" Height="250" CssClass="TM" >
+             <span>SHOP NOW</span>
+                </asp:LinkButton>
+                 <asp:LinkButton runat="server"  Width="300" Height="250" CssClass="TM2" >
+                     <div id="mid">
+                         <h2 style="font-size:18px;text-decoration:none;">RAW BEAUTY</h2>
+                         <p style="font-size:12px;color:lightgray;">Shop our range raw-materials collectibles</p>
+                     </div>
+             
+                </asp:LinkButton>
+            </td>
+            <td style="">
+                 <asp:LinkButton runat="server"  Width="700" Height="480" CssClass="TM3" >
+             <span>SHOP NOW</span>
+                </asp:LinkButton>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <table id="Menmast2">
+        
+
+        <tr style="height:100px;">
+            <td>_______________________________________</td>
+            <td style="text-align:center;font-weight:bold;">SHOP OUR FAVOURITES</td>
+            <td>_______________________________________</td>
+        </tr>
+        
+
+      
+     </table>
+
+    <table id="hm">
+        
+        <tr>
+            <td>
+                <div  style="background-image: url(
+                    HomePics/Fav11.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            
+            <td>
+                <div style="background-image: url(
+                    HomePics/Fav12.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div style="background-image: url(
+                    HomePics/Fav13.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div  style="background-image: url( HomePics/Fav21.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            
+            <td>
+                <div style="background-image: url( HomePics/Fav22.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})">SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div style="background-image: url( HomePics/Fav23.jpg); 
+                       background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
+                    <a href="#">
+                        <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
+                     font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
+                            onmouseout="$(this).hover().css({'background-color': 'white', 'color':'black'})" >SHOP NOW</p>
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+         <tr style="height:100px;">
+            <td>_______________________________________</td>
+            <td style="text-align:center;font-weight:bold;">TOP BRANDS</td>
+            <td>_______________________________________ 
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="	fa fa-arrow-up"></span></button></td>
+        </tr>
+    </table>
+         
+        <table id="Bra">
+         <tr>
+            <td>
+                <a href="#">
+                    <img src="HomePics/Bra1.jpg" width="150" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="HomePics/Bra2.jpg" width="150"  />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="HomePics/Bra3.jpg" width="150" />
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="HomePics/Bra4.jpg" width="150"/>
+                </a>
+            </td>
+             <td>
+                <a href="#">
+                    <img src="HomePics/bra5.jpg" width="150" />
+                </a>
+            </td>
+             <td>
+                <a href="#">
+                    <img src="HomePics/Bra6.jpg" width="150" />
+                </a>
+            </td>
+        </tr>
+
+           
+            <tr>
+                <td>
+                    <asp:DropDownList  CssClass="Dd" runat="server" ID="brands" Font-Bold="true" Width="210">
+                        <asp:ListItem>BRAND</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="size" Font-Bold="true" Width="210">
+                        <asp:ListItem>SIZE</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="pricez" Font-Bold="true" Width="210">
+                        <asp:ListItem>PRICE</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:DropDownList CssClass="Dd" runat="server" ID="zortby" Font-Bold="true" Width="210">
+                        <asp:ListItem>SORT BY</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+    <asp:ContentPlaceHolder runat="server" ID="HomeCotentPlaceHolder">
+
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+

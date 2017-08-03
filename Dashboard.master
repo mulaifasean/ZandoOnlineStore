@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ChildMaster.master" AutoEventWireup="true" CodeFile="Dashboard.master.cs" Inherits="Dashboard" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ChildContentPlaceHolder" Runat="Server">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #MainDash{margin-left:150px;}
+        table{width:80%;
+              height:40px;
+             
+        }
+        #dashMenu{width:250px;
+                  height:700px;
+                  text-align:center;
+        }
+        h2{font-size:12px;
+           font-weight:bolder;
+           color:black;
+           font-family:Arial;
+           background-color:#CCC;
+           height:40px;
+           border-top-left-radius:8px;
+           border-top-right-radius:8px;
+           
+        }
+        p a{color:black;}
+        p .current::selection{color:#ff6a00;font-weight:bold;}
+       
+    </style>
+    <div id="MainDash">
+        <table>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Visible="false" ID="LogSta" ></asp:Label>
+                </td>
+            </tr>
+            <tr style="color:black;border-bottom:1px solid grey;">
+                <td  colspan="3">
+                    My Account -<span style="text-decoration:underline;"><label runat="server" ID="PageID"></label></span> 
+                </td>
+               
+                <td class="nav navbar-right"> <asp:Label ID="Label1" Visible="false" Font-Bold="true"  runat="server"></asp:Label>
+                  <asp:Button ID="LogOutbtn"   runat="server" BorderStyle="None" BackColor="Black" ForeColor="White" Text="LogOut" OnClick="LogOutbtn_Click" />
+                </td>
+            </tr>
+            <tr>
+ <td id="dashMenu">
+        <div id="dashOrder">
+            <h2 ><span style="font-size:24px" class="glyphicon glyphicon-send"></span>ORDERS</h2>
+            <p><a class="current" runat="server" id="LatestO" href="#">Latest Order</a></p>
+            <p><a class="current" runat="server" id="OrderH" href="OrderHistory.aspx">Order History</a></p>
+            <p><a class="current"  runat="server" id="Returns" href="Returns.aspx">Returns</a></p>
+            <p><a class="current" runat="server" id="MyAddress" href="MyAddress.aspx">My Addresses</a></p>
+        </div>
+     <div id="dashPay">
+         <h2 ><span style="font-size:24px" class="glyphicon glyphicon-credit-card"></span> PAYMENT</h2>
+         <p><a  runat="server" id="MyCards" href="MyCards.aspx">My Cards</a></p>
+         <p><a class="current" runat="server" id="ZBankD" href="ZandoBankDetails.aspx">Zando Bank Details</a></p>
+     </div>
+     <div id="dashAcc">
+         <h2><span style="font-size:24px" class="glyphicon glyphicon-lock"></span> MY ACCOUNT</h2>
+         <p><a class="current"  runat="server" id="PersonalInfo" href="PersonalInfo.aspx">Personal Information</a></p>
+         <p><a class="current" runat="server" id="Pasword" href="ChangePassword.aspx">Password</a></p>
+         <p><a  runat="server" id="WishL" href="#">Wishlist</a></p>
+         <p><a runat="server" id="NewsL" href="Newsletter.aspx">Newsletter</a></p>
+     </div>
+     <div id="dashFaq">
+         <h2><span style="font-size:24px" class="fa fa-comment-o" ></span>FAQ</h2>
+         <p><a  runat="server" id="ShipDel" href="#">Shipping & Delivery</a></p>
+         <p><a  runat="server" id="Ret2" href="#">Returns</a></p>
+         <p><a  runat="server" id="PayM" href="#">Payment Methods</a></p>
+     </div>
+     </td>
+                <td colspan="4" style="width:1100px;">
+<asp:ContentPlaceHolder runat="server" ID="DashboardPlaceHolder">
+
+    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+ 
+</asp:Content>
+

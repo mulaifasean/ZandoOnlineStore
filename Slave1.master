@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Slave1.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style>
+        *{padding:0px;
+          margin:0px;
+        }
+        header{background-color:black;
+               height:75px;
+               margin:0px;
+        }
+        header ul{
+            padding:0px;
+            list-style:none;
+        }
+        header ul li{
+            float:left;
+            width:100px;
+            margin:1px;
+            text-align:center;
+        }
+        header ul li a{text-decoration:none;
+                       color:white;
+                       text-anchor:middle;
+                       padding:20px;
+                       font-size:18px;
+                       
+                       display:block;
+                       text-align:center;
+
+        }
+        header ul li ul {display:none;}
+        header ul li a:hover {
+                             color:white;
+                             text-decoration:none;
+        }
+         header ul li:hover{
+                                color:black;
+                                
+         }
+         header ul li:hover ul {
+                                  display:block;
+                                  
+         }
+         header ul li table{display:none;
+         }
+         header ul li:hover table {display:inline-block;
+                                  background-color:white;
+                                  grid-auto-flow:column;
+         }
+         footer table tr td{padding:10px;
+                      
+         }
+         footer table tr td a{text-decoration:none;
+                              color:white;
+                              
+         }
+         footer table tr td a:hover{color:#808080;text-decoration:none;}
+        #SearchText {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #CCC;
+            color: #555;
+            box-sizing: border-box;
+            font-family: 'Arvo';
+            font-size: 15px;
+            height: 45px;
+            left: 45%;
+            margin: -25px 0 0 -100px;
+            padding: 10px 0px;
+            position:relative;
+            top: 25%;
+            width: 200px;
+        }
+   #WomenID{background-color:black;color:white;
+            width:60px;height:20px;
+            border:0px;
+   }
+   #WomenID:hover{background-color:white;color:black;
+                  border:2px;
+                  border-style:solid;
+                  border-color:black;
+                  font-weight:bolder;
+                  text-anchor:middle;
+                  position:relative;
+   }
+   #MenID{background-color:black;color:white;
+            width:60px;height:20px;
+            border:0px;
+   }
+   #MenID:hover{background-color:white;color:black;
+                  border:2px;
+                  border-color:black;
+                  font-weight:bolder;
+                  border-style:solid;
+                  position:relative;
+   }
+        #EmailText {
+            color:#808080;
+            border: none;
+ 
+  background-color:#CCC;
+        }
+            
+     footer table tr #Fpics:hover>a{color:#ff6a00;}
+    </style>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+</head>
+<body>
+  <form runat="server">
+      
+    <header>
+         <ul><li><a href="#">WOMEN<span></span></a>
+             <table>
+                 <tr  style="white-space:pre-line;">
+                     <th style="color:red;">SALE</th>
+                     <th>SHOES</th>
+                     <th>CLOTHING</th>
+                     <th>ACCESSORIES</th>
+                     <th>SPORTS</th>
+                     <th>SA_BRANDS</th>
+                 </tr>
+                  <tr>
+                      <td>dgfhyf</td>
+                       <td>gjhi</td>
+                       <td>ghuoy</td>
+                       <td>gfhkg</td>
+                       <td>hgjughj</td>
+                       <td>uyohyuihj</td>
+                  </tr>
+                  <tr>
+                       <td>rdtuftyf</td>
+                       <td>trfty</td>
+                       <td>defhgfh</td>
+                       <td>jhfgui</td>
+                       <td>dfygfft</td>
+                       <td>srydetged</td>
+                  </tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+             </table>
+             </li>
+         <li><a href="#">MEN</a></li>
+         <li><a href="#">KIDS</a><table>
+                 <tr><th>ACCESSORIES</th>
+                     <th>SHOES</th>
+                     <th>CAPS</th>
+                     <th>CLOTHING</th>
+                 </tr>
+                 <tr><td>Socks</td>
+                     <td>Watches</td>
+                     <td>Rings</td>
+                     <td>Bracelets</td>
+                 </tr>
+                 <tr><td>Boot</td>
+                     <td>Sandals</td>
+                     <td>Casual</td>
+                     <td>Formal</td>
+                 </tr>
+                 <tr><td>NY</td>
+                     <td>LA</td>
+                     <td>Miami</td>
+                     <td>NC</td>
+                 </tr>
+                 <tr><td>Nike</td>
+                     <td>Addidas</td>
+                     <td>Reebok</td>
+                     <td>Puma</td>
+                 </tr>
+                 <tr></tr>
+                 <tr></tr>
+                 <tr></tr>
+             </table></li>
+         <li><a href="#">HOME</a>
+
+             </li>
+         
+             <li><a href="#">BRANDS</a>
+                 
+            <table style="margin:0px;padding:0px;">
+                
+                    
+                
+                <tr>
+                    <td>
+                        <a href="#">
+                        <img src="BrandsImages/Puma.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Polo.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Nike.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Addidas.jpg" width="200" height="150" /></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">
+                        <img src="BrandsImages/Utopia.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Levis.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Soviet.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+               
+            </table>
+             
+             </li>
+             
+            <li><label runat="server" style="color:white;margin-top:25px;">Search:</label></li>
+             <li></li>
+             <li style="margin-top:25px;" ><asp:TextBox runat="server"  ID="SearchText" placeholder="e.g Black sandals" OnTextChanged="SearchText_TextChanged"></asp:TextBox></li>
+             <li><button style="color:#ff6a00;background-color:black;border:none;margin-top:25px;"><span class="glyphicon glyphicon-search"></span></button></li>
+             
+         </ul>
+        
+        
+
+    </header>
+
+    
+   
+        
+        <asp:ContentPlaceHolder id="Slave1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     
+    <footer style="background-color:black;color:white;text-align:center;">
+        <div style="background-color:#CCC;margin:0px;height:200px;width:100%;text-align:center;padding-top:40px;">
+         
+          <p style="color:black;">SIGN UP AND GET UP TO<span style="color:#ff6a00;">R200 OFF</span> </p>
+            <p style=" border-bottom: 2px solid #000000;width:30%; margin-left:35%;margin-right:35%">
+                <asp:TextBox runat="server" TextMode="Email" ID="EmailText"  placeholder="Enter your email address"></asp:TextBox>
+                <asp:Button  runat="server" ID="WomenID" Text="Women" />
+                <asp:Button  runat="server" ID="MenID" Text="Men"/>
+            </p>
+      </div>
+       <table  style=" width:100%;align-content:center; ">
+           <tr style="font-weight:bolder;"><td>ABOUT</td>
+               <td>CUSTOMER SERVICES</td>
+               <td>CONNECT WITH US</td>
+               <td>SECURITY</td>
+           </tr>
+           <tr><td><a href="#">WHO ARE WE</a></td>
+               <td><a href="#">CONTACT US</a></td>
+               <td id="Fpics"><a href="#">
+                   <img src="FooterPics/Fb.jpg" width="30" height="25" /></a>
+                   <a href="#">
+                       <img src="FooterPics/twitter.png" width="30" height="25"/></a>
+                   <a href="#">
+                       <img src="FooterPics/Insta.png" width="30" height="25" /></a>
+                   <a href="#">
+                       <img src="FooterPics/Youtube.png" width="30" height="25" /></a>
+                   <a href="#">
+                       <img src="FooterPics/share.jpg" width="30" height="25"/></a>
+               </td>
+               <td><a href="#">
+                   <img src="FooterPics/dig.png"width="70" height="50" /></a></td>
+           </tr>
+           <tr><td><a href="#">WORK WITH US</a></td>
+               <td><a href="#">FAQS</a></td>
+               <td><a href="#">TRTFYYF</a></td>
+               <td><a href="#">FGFYGHY</a></td>
+           </tr>
+           <tr><td><a href="#">BECOME A SUPPLIER</a></td>
+               <td><a href="#">TERMS AND CONDITIONS</a></td>
+               <td><a href="#"></a>REWARDS</td>
+               <td><a href="#"></a>HGHGJGJ</td>
+           </tr>
+           <tr><td><a href="#">AFFILIATE A PROGRAM</a></td>
+               <td><a href="#">SIZE GUIDE</a></td>
+               <td><a href="#">YUFYUF</a></td>
+               <td><a href="#">FDTUFUYF</a></td>
+           </tr>
+       </table> 
+        <p style="color:#808080;"> &copy;2012-2017  ZANDO.CO.ZA  |  ALL RIGHTS RESERVED  | <a style="color:#808080;text-decoration:none;" href="#"> PRIVACY POLICY</a></p>
+    </footer></form>
+</body>
+</html>

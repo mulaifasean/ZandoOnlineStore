@@ -1,0 +1,726 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Manager.master" AutoEventWireup="true" CodeFile="ChildMaster.master.cs" Inherits="ChildMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <style>
+        *{padding:0px;
+          margin:0px;
+        }
+        header{background-color:black;
+               height:75px;
+               margin:0px;
+        }
+        header ul{
+            padding:0px;
+            list-style:none;
+            width:100%;
+        }
+        header ul li{
+            float:left;
+            width:100px;
+            margin:1px;
+            text-align:center;
+        }
+        header ul li a{
+            text-decoration:none;
+                       color:white;
+                       text-anchor:middle;
+                       padding:20px;
+                       font-size:18px;
+                       
+                       display:block;
+                       text-align:center;
+
+        }
+        header ul li ul {display:none;}
+        header ul li a:hover {
+                             
+                             text-decoration:none;
+        }
+         header ul li:hover{
+                                color:black;
+                                
+         }
+         header ul li:hover ul {
+                                  display:block;
+                                  
+         }
+         header ul li table{display:none;
+         }
+         header ul li:hover table {display:inline-block;
+                                  background-color:white;
+                                  grid-auto-flow:column;
+         }
+         
+         footer table tr td{padding:10px;
+                      
+         }
+         footer table tr td a{text-decoration:none;
+                              color:white;
+                              
+         }
+         footer table tr td a:hover{color:#808080;text-decoration:none;}
+        
+   #WomenID{background-color:black;
+            color:white;
+            width:60px;height:20px;
+            border:0px;
+   }
+   #WomenID:hover{background-color:white;
+                  color:black;
+                  border:2px;
+                  border-style:solid;
+                  border-color:black;
+                  font-weight:bolder;
+                  text-anchor:middle;
+                  position:relative;
+   }
+   #MenID{background-color:black;
+          color:white;
+            width:60px;height:20px;
+            border:0px;
+   }
+   #MenID:hover{background-color:white;color:black;
+                  border:2px;
+                  border-color:black;
+                  font-weight:bolder;
+                  border-style:solid;
+                  position:relative;
+   }
+        #EmailText {
+            color:#808080;
+            border: none;
+ 
+  background-color:#CCC;
+        }
+            
+     footer table tr #Fpics:hover>a{color:#ff6a00;}
+
+     #DIV1{border-bottom:2px solid white;
+       margin-right:100px;    
+     }
+     ul li table  {
+         width:1200px;
+         height:500px;
+     }
+     ul li table tr th{text-align:center;}
+     ul li table tr td a{color:black;}
+     ul li table tr td{width:200px;}
+     ul li #KIDStbl tr td {padding:0px;
+                           width:200px;
+     }
+     ul li #KIDStbl tr td a{padding:0px;
+                            font-family:Arial;
+                            font-size:14px;
+     }
+     ul li #KIDStbl tr td a:hover{color:#ff6a00;}
+     ul li #KIDStbl tr .sale a{color:red;}
+     ul li #KIDStbl tr .sale a:hover{text-decoration:underline;}
+
+      ul li #Hometbltbl tr td {padding:0px;
+                           width:200px;
+     }
+     ul li #Hometbl tr td a{padding:0px;
+                            font-family:Arial;
+                            font-size:14px;
+     }
+     ul li #Hometbl tr td a:hover{color:#ff6a00;}
+
+
+      ul li #Mentbltbl tr td {padding:0px;
+                           width:200px;
+     }
+     ul li #Mentbl tr td a{padding:0px;
+                            font-family:Arial;
+                            font-size:14px;
+     }
+     ul li #Mentbl tr td a:hover{color:#ff6a00;}
+     ul li #Mentbl tr .sale a{color:red;}
+     ul li #Mentbl tr .sale a:hover{text-decoration:underline;}
+
+      ul li #Womentbl tr td {padding:0px;
+                           width:200px;
+     }
+     ul li #Womentbl tr td a{padding:0px;
+                            font-family:Arial;
+                            font-size:14px;
+     }
+     ul li #Womentbl tr td a:hover{color:#ff6a00;}
+     ul li #Womentbl tr .sale a{color:red;}
+     ul li #Womentbl tr .sale a:hover{text-decoration:underline;}
+     .NA a{color:blue;}
+     .NA a:hover{text-decoration:underline;text-decoration-color:blue;color:blue;}
+    </style>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server" class="container" >
+    
+    <header >
+         <ul class="nav navbar"><li><a href="WOMEN.aspx">WOMEN</a>
+             <table id="Womentbl">
+                 <tr  style="white-space:pre-line;">
+                     <th class="sale" style="color:red;"><a href="#">SALE</a></th>
+                     <th>SHOES</th>
+                     <th>CLOTHING</th>
+                     <th>ACCESSORIES</th>
+                     <th>SPORTS</th>
+                     <th>SA BRANDS</th>
+                 </tr>
+                  <tr>
+                      <td></td>
+                       <td><a href="#">Boots</a></td>
+                       <td><a href="#">Dresses</a></td>
+                       <td><a href="#">Bags & Wallets</a></td>
+                       <td><a href="#">Sports Clothing</a></td>
+                       <td><a href="#">Utopia</a></td>
+                  </tr>
+                  <tr>
+                       <td  style="font-weight:bolder;" class="NA"><a href="#">NEW ARRIVALS</a></td>
+                       <td><a href="#">Sneakers & Canvas</a></td>
+                       <td><a href="#">Coats, Jackets & Gilets</a></td>
+                       <td><a href="#">Watches</a></td>
+                       <td><a href="#">Sports Shoes</a></td>
+                       <td><a href="#">Queenspark</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td><a href="#">Flats</a></td>
+                       <td><a href="#">Knitwear</a></td>
+                       <td><a href="#">Jewellery</a></td>
+                       <td><a href="#">Sports Accessories & Equipment</a></td>
+                       <td><a href="#">Miss Black</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td><a href="#">Wedges</a></td>
+                       <td><a href="#">Tops</a></td>
+                       <td><a href="#">Sunglasses & Eyewear</a></td>
+                       <td></td>
+                       <td><a href="#">G Couture</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td><a href="#">Platforms</a></td>
+                       <td><a href="#">Trousers & Leggings</a></td>
+                       <td><a href="#">Gloves & Scarves</a></td>
+                       <td  style="font-weight:bolder;"><a href="#">BEAUTY</a></td>
+                       <td>Zoom</td>
+                  </tr>
+                  <tr>
+                       <td style="font-weight:bolder;">DISCOVER</td>
+                       <td><a href="#">Sandals</a></td>
+                       <td><a href="#">Jeans</a></td>
+                       <td><a href="#">Hosiery</a></td>
+                       <td><a href="#">Make-Up</a></td>
+                       <td><a href="#">Paige Smith</a></td>
+                  </tr>
+                  <tr>
+                       <td>
+                           <img src="Menu%20items%20pictures/Women/discoverblock_winter_women.jpg" /></td>
+                       <td><a href="#">Heels</a></td>
+                       <td><a href="#">Sweatshirts</a></td>
+                       <td><a href="#">Hats & Caps</a></td>
+                       <td><a href="#">Skin Care</a></td>
+                       <td></td>
+                  </tr>
+                  <tr>
+                       <td><a href="#">The Winter Collection</a></td>
+                       <td></td>
+                       <td><a href="#">Lingerie</a></td>
+                       <td><a href="#">Socks</a></td>
+                       <td><a href="#">Fragrances</a></td>
+                       <td  style="font-weight:bolder;">INTERNATIONAL BRANDS</td>
+                  </tr>
+                  <tr>
+                       <td>
+                           <img src="Menu%20items%20pictures/Women/discover_W_shimmer.jpg" /></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td><a href="#">Hair Care</a></td>
+                       <td><a href="#">addidas</a></td>
+                  </tr>
+                  <tr>
+                       <td><a href="#">Subtle To Shimmer</a></td>
+                       <td></td>
+                       <td  style="font-weight:bolder;"><a href="#">MATERNITY</a></td>
+                       <td></td>
+                       <td><a href="#">Nail Care</a></td>
+                       <td><a href="#">Nike</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td></td>
+                       <td  style="font-weight:bolder;"><a href="#">PLUS SIZE</a></td>
+                       <td></td>
+                       <td><a href="#">Body ,Bath & Shower</a></td>
+                       <td><a href="#">levi's<span class="	glyphicon glyphicon-registration-mark"></span></a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td><a href="#">City Goddess</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td><a href="#">New look</a></td>
+                  </tr>
+                  <tr>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td><a href="#">London Hub Fashion</a></td>
+                  </tr>
+             </table>
+             </li>
+         <li><a href="MEN.aspx">MEN</a>
+             <table id="Mentbl">
+                 <tr>
+                     <th class="sale"><a href="#">SALE</a></th>
+                     <th>SHOES</th>
+                     <th>CLOTHING</th>
+                     <th>ACCESSORIES</th>
+                     <th>SPORTS</th>
+                     <th>SA BRANDS</th>
+                 </tr>
+                 <tr>
+                     <td style="font-weight:bolder;" class="NA"><a href="#">NEW ARRIVALS</a></td>
+                     <td><a href="#">Boots</a></td>
+                      <td><a href="#">T-Shirts, Vests & Polo's</a></td>
+                      <td><a href="#">Hats & Caps</a></td>
+                      <td><a href="#">Sports Clothing</a></td>
+                      <td><a href="#">Utopia</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Formal Shoes</a></td>
+                      <td><a href="#">Coats, Jackets & Gilets</a></td>
+                      <td><a href="#">Bags & Wallets</a></td>
+                      <td><a href="#">Sports Shoes</a></td>
+                      <td><a href="#">Polo</a></td>
+                 </tr>
+                 <tr>
+                     <td style="font-weight:bolder;">DISCOVER</td>
+                     <td><a href="#">Sneakers & Canvas</a></td>
+                      <td><a href="#">Jeans</a></td>
+                      <td><a href="#">Socks</a></td>
+                      <td><a href="#">Sports Accessories & Equipment</a></td>
+                      <td><a href="#">Soviet</a></td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <img src="Menu%20items%20pictures/Men/discoverblock_winter_men.jpg" /></td>
+                     <td><a href="#">Casual Shoes</a></td>
+                      <td><a href="#">Trousers & Chinos</a></td>
+                      <td><a href="#">Watches</a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">JCrew</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#">The Winter Collection</a></td>
+                     <td><a href="#">Sandals</a></td>
+                      <td><a href="#">Knitwear</a></td>
+                      <td><a href="#">Sunglasses & Eyewear</a></td>
+                      <td style="font-weight:bolder;">GROOMING</td>
+                      <td><a href="#">Bronx</a></td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <img src="Menu%20items%20pictures/Men/discover_men_grey2.jpg" /></</td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#">Shirts</a></td>
+                      <td><a href="#">Formal Accessories</a></td>
+                      <td><a href="#">Fragrances</a></td>
+                      <td><a href="#">Urban Art</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#">Greyed Out</a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#">Underwear & Baselayers</a></td>
+                      <td><a href="#">Belts</a></td>
+                      <td><a href="#">Skincare</a></td>
+                      <td><a href="#"></a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#">Sweatshirts</a></td>
+                      <td><a href="#">Jewellery</a></td>
+                      <td><a href="#">Shaving</a></td>
+                      <td style="font-weight:bolder;">INTERNATIONAL BRANDS</td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Hair Care</a></td>
+                      <td><a href="#">addidas</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Body, Bath & Shower</a></td>
+                      <td><a href="#">Nike</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Levi's<span class="glyphicon glyphicon-registration-mark"></span></a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Jeep</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Caterpillar</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#"></a></td>
+                      <td><a href="#">Crosshatch</a></td>
+                 </tr>
+                
+             </table>
+         </li>
+         <li><a href="KidsMain.aspx">KIDS</a>
+             <table id="KIDStbl">
+                 <tr><th class="sale"><a href="#">SALE</a></th>
+                     <th>SHOES</th>
+                     <th>CLOTHING</th>
+                     <th>ACCESSORIES</th>
+                     <th>SA BRANDS</th>
+                     
+                 </tr>
+                 <tr>
+                     <td style="font-weight:bolder;" class="NA"><a href="#">NEW ARRIVALS</a></td>
+                     <td><a href="#">Sneakers & Canvas</a></td>
+                     <td><a href="#">T-Shirts , Vests & Polo's</a></td>
+                     <td><a href="#">Bags & Wallets</a></td>
+                     <td><a href="#">Bugsy Boo</a></td>
+                 </tr>
+                 <tr>
+                     <td style="font-weight:bolder;"><a href="#">BABY</a></td>
+                     <td><a href="#">Boots</a></td>
+                     <td><a href="#">Trousers & Leggings</a></td>
+                     <td><a href="#">Gloves & Scarves</a></td>
+                     <td><a href="#">Tomy Takkies</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Casual Shoes</a></td>
+                     <td><a href="#">Dresses</a></td>
+                     <td><a href="#">Hats & Caps</a></td>
+                     <td><a href="#">Toughees</a></td>
+                 </tr>
+                 <tr>
+                     <td style="font-weight:bolder;">DISCOVER</td>
+                     <td><a href="#">School Shoes</a></td>
+                     <td><a href="#">Babygrows & Sets</a></td>
+                     <td><a href="#">Socks</a></td>
+                     <td><a href="#">Candy Floss Clouds</a></td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <img src="Menu%20items%20pictures/Kids/Discover_Girls_Winter.jpg" /></td>
+                     <td><a href="#">Formal Shoes</a></td>
+                     <td><a href="#">Underwear & Baselayers</a></td>
+                     <td><a href="#">Hair Accessories</a></td>
+                     <td><a href="#">Miss Molly</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#">Girls Winter Collection</a></td>
+                     <td><a href="#">Sandals</a></td>
+                     <td><a href="#">Sweatshirts</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Bubblegummers</a></td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <img src="Menu%20items%20pictures/Kids/Discover_Boys_Winter.jpg" /></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Jeans</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#">Boys Winter Collection</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Coats, Jackets & Gilets</a></td>
+                     <td><a href="#"></a></td>
+                     <td style="font-weight:bolder;">INTERNATIONAL BRANDS</td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Nike</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">addidas</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Converse</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Reebok</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Puma</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Jockey</a></td>
+                 </tr>
+                 
+             </table></li>
+         <li><a href="Home.aspx">HOME</a>
+             <table id="Hometbl">
+                 <tr>
+                     <td style="font-weight:bolder;" class="NA"><a href="#">NEW ARRIVALS</a></td>
+                     <th>BEDROOM</th>
+                     <th>HOME LIVING & GIFTS</th>
+                     <th>BRANDS</th>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Duvets & Pillows</a></td>
+                     <td><a href="#">Home Decor, Accessories & Gifts</a></td>
+                     <td><a href="#">NovelOnline</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Bed Linen & Sheets</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Sheraton</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Cushions & Throws</a></td>
+                     <td style="font-weight:bolder;">LIGHTING</td>
+                     <td><a href="#">Pierre Cardin</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Lampshades & Decorative Lights</a></td>
+                     <td><a href="#">Illumina</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td style="font-weight:bolder;">BATHROOM</td>
+                     <td><a href="#">Mounted Lights</a></td>
+                     <td><a href="#">Colibri Towelling</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Storage</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Linen House</a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Bathroom Accessories</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#">Towels</a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                 </tr>
+                 <tr>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                     <td><a href="#"></a></td>
+                 </tr>
+             </table>
+             </li>
+         
+             <li><a href="#">BRANDS</a>
+                 
+            <table style="margin:0px;padding:0px;">
+                
+                    
+                
+                <tr>
+                    <td>
+                        <a href="#">
+                        <img src="BrandsImages/Puma.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Polo.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Nike.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Addidas.jpg" width="200" height="150" /></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">
+                        <img src="BrandsImages/Utopia.jpg" width="200" height="150" /></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Levis.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/Soviet.jpg" width="200" height="150"/></a></td>
+                    <td><a href="#">
+                        <img src="BrandsImages/VAL.jpg" />
+                        <span style="position:sticky;width:40px;height:40px; color:#ff6a00;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                    </td>
+                </tr>
+               
+            </table>
+             
+             </li>
+           
+             <li id="DIV1" class=" navbar-form navbar-right">
+            <div style="color:white;"  class=" form-group">
+                Search:<input style="background-color:black;color:#808080; border:none;" type="text" placeholder="e.g Addidas" class="form-control" />
+            </div>
+            <button style="color:#ff6a00;background-color:black;border:none;" class="btn btn-default" >
+            <i  class=" glyphicon glyphicon-search"></i>
+            </button>
+           
+        </li>
+         </ul>
+       
+           
+                
+                
+                
+            
+      <ul style="width:100%;margin:auto;
+background-color:#808080;color:white; position:center;
+" 
+  class="nav navbar-header" >
+         <li><a href="#">
+                    <img src="UnderMenupics/free_delivery_icon-01.png" /></a></li>
+         <li><a><img src="UnderMenupics/easy_returns-01.png" /></a></li>
+         <li><a href="#">
+                    <img src="UnderMenupics/cash_icon-01.png" /></a></li>
+         <li><a href="#">
+                    <img src="UnderMenupics/africa_icon-01.png" /></a></li>
+    </ul>
+       
+
+    </header>
+  
+
+
+    
+    
+    
+    <asp:ContentPlaceHolder runat="server" ID="ChildContentPlaceHolder" >
+
+    </asp:ContentPlaceHolder>
+    
+    <footer style="background-color:black;color:white;text-align:center;">
+        <div style="background-color:#CCC;margin:0px;height:200px;width:100%;text-align:center;padding-top:40px;">
+         
+          <p style="color:black;">SIGN UP AND GET UP TO<span style="color:#ff6a00;">R200 OFF</span> </p>
+            <p style=" border-bottom: 2px solid #000000;width:30%; margin-left:35%;margin-right:35%"> 
+                <input  type="email" id="EmailText" placeholder="Enter your email address" />
+                <button id="WomenID" >Women</button>
+                <button id="MenID" >Men</button>
+            </p>
+      </div>
+       <table  style=" width:100%;align-content:center; ">
+           <tr style="font-weight:bolder;"><td>ABOUT</td>
+               <td>CUSTOMER SERVICES</td>
+               <td>CONNECT WITH US</td>
+               <td>SECURITY</td>
+           </tr>
+           <tr><td><a href="#">WHO ARE WE</a></td>
+               <td><a href="#">CONTACT US</a></td>
+               <td id="Fpics"><a href="#">
+                   <img src="FooterPics/Fb.jpg" width="60" height="40" /></a>
+                   <a href="#">
+                       <img src="FooterPics/twitter.png" width="60" height="40"/></a>
+                   <a href="#">
+                       <img src="FooterPics/Insta.png" width="60" height="40" /></a>
+                   <a href="#">
+                       <img src="FooterPics/Youtube.png" width="60" height="40" /></a>
+                   <a href="#">
+                       <img src="FooterPics/share.jpg" width="60" height="40"/></a>
+               </td>
+               <td><a href="#">
+                   <img src="FooterPics/dig.png"width="60" height="50" /></a></td>
+           </tr>
+           <tr><td><a href="#">WORK WITH US</a></td>
+               <td><a href="#">FAQS</a></td>
+               <td><a href="#">TRTFYYF</a></td>
+               <td><a href="#">FGFYGHY</a></td>
+           </tr>
+           <tr><td><a href="#">BECOME A SUPPLIER</a></td>
+               <td><a href="#">TERMS AND CONDITIONS</a></td>
+               <td><a href="#"></a>REWARDS</td>
+               <td><a href="#"></a>HGHGJGJ</td>
+           </tr>
+           <tr><td><a href="#">AFFILIATE A PROGRAM</a></td>
+               <td><a href="#">SIZE GUIDE</a></td>
+               <td><a href="#">YUFYUF</a></td>
+               <td><a href="#">FDTUFUYF</a></td>
+           </tr>
+       </table> 
+        <p style="color:#808080;"> &copy;2012-2017  ZANDO.CO.ZA  |  ALL RIGHTS RESERVED  | <a style="color:#808080;text-decoration:none;" href="#"> PRIVACY POLICY</a></p>
+    </footer>
+</asp:Content>
+
