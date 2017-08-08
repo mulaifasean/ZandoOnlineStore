@@ -15,7 +15,7 @@
       }
        #Menmast tr td p a:hover{font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
              .TM {
-                 background-image: url(http://localhost:50981/HomePics/home-top-middle-TEXTURES.jpg);
+                 background-image: url(http://localhost:49251/HomePics/home-top-middle-TEXTURES.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
              }
@@ -26,7 +26,7 @@
               top:150px;    
       }
              .TM2 {
-                 background-image: url(http://localhost:50981/HomePics/home-bottom-middle-RAW.jpg);
+                 background-image: url(http://localhost:49251/HomePics/home-bottom-middle-RAW.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
              }
@@ -41,7 +41,7 @@
       }
        .TM2 :hover{zoom:1;}
              .TM3 {
-                 background-image: url(http://localhost:50981/HomePics/home-top-right-LINEN.jpg);
+                 background-image: url(http://localhost:49251/HomePics/home-top-right-LINEN.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
                  width: 100%;

@@ -18,6 +18,17 @@
                     padding:30px;
         }
         #PDet tr td a{width:100%;height:100%;}
+        .AddC{width:300PX;
+              height:70PX;
+              border:none;
+              background-color:darkorange;
+              color:white;
+              font-weight:bold;
+        }
+        .AddC:hover{border:2px solid darkorange;
+                color:darkorange;
+                background-color:white;
+        }
     </style>
     
     <script>
@@ -38,15 +49,29 @@
                      <h3 id="name1" runat="server"></h3>
                      <h4 id="des1" runat="server"></h4>
                      <p id="price1" runat="server"></p>
+                     <asp:Button runat="server" ID="AddCart" Cssclass="AddC"   Text="ADD TO CART" OnClick="AddCart_Click"  /><br />
+                     <asp:Button runat="server" ID="vwct" CssClass="AddC" Text="View Cart" OnClick="vwct_Click" /> 
                 </td>
             </tr>
             <tr>
                 <td>
-                    
+                 
                 </td>
             </tr>
         </table>
-       
+       <asp:DataList runat="server" ID="d1" >
+        <HeaderTemplate>
+            <table>
+        </HeaderTemplate>
+
+        <ItemTemplate>
+             
+        </ItemTemplate>
+
+        <FooterTemplate>
+            </table>
+ </FooterTemplate>
+    </asp:DataList>
     </div>
 </asp:Content>
 

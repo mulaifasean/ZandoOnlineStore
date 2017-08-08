@@ -25,7 +25,7 @@
         #Menmast tr td #baby3:hover{text-decoration:none;font-weight:bold;}
        #Menmast tr td p a:hover{text-decoration:underline;}
              .TM {
-                 background-image: url(http://localhost:50981/KIDSpics/top-middle-middle-GIRLS.jpg);
+                 background-image: url(http://localhost:49251/KIDSpics/top-middle-middle-GIRLS.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
              }
@@ -37,7 +37,7 @@
       }
 
              .TM1 {
-                 background-image: url(http://localhost:50981/KIDSpics/bottom-middle-middle-BABY.jpg);
+                 background-image: url(http://localhost:49251/KIDSpics/bottom-middle-middle-BABY.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
              }
@@ -48,7 +48,7 @@
               top:180px;    
       }
              .TM2 {
-                 background-image: url(http://localhost:50981/KIDSpics/Main_Banner_Character_Brand.jpg);
+                 background-image: url(http://localhost:49251/KIDSpics/Main_Banner_Character_Brand.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
              }
@@ -63,7 +63,7 @@
       }
       
              .TM3 {
-                 background-image: url(http://localhost:50981/KIDSpics/top-middle-right-BOYS.jpg);
+                 background-image: url(http://localhost:49251/KIDSpics/top-middle-right-BOYS.jpg);
                  background-repeat: no-repeat;
                  background-size: contain;
                  width: 100%;
@@ -231,7 +231,7 @@ function topFunction() {
         
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:50981/KIDSpics/fa11.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div  style="background-image: url(http://localhost:49251/KIDSpics/fa11.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
@@ -241,7 +241,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url(http://localhost:50981/KIDSpics/fa12.jpg ); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div style="background-image: url(http://localhost:49251/KIDSpics/fa12.jpg ); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
@@ -250,7 +250,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:50981/KIDSpics/fa13.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div style="background-image: url(http://localhost:49251/KIDSpics/fa13.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
@@ -262,7 +262,7 @@ function topFunction() {
 
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:50981/KIDSpics/fa21.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div  style="background-image: url(http://localhost:49251/KIDSpics/fa21.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
@@ -272,7 +272,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url( http://localhost:50981/KIDSpics/fa22.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div style="background-image: url( http://localhost:49251/KIDSpics/fa22.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"
@@ -281,7 +281,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:50981/KIDSpics/fa23.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
+                <div style="background-image: url(http://localhost:49251/KIDSpics/fa23.jpg); background-repeat: no-repeat; background-size: cover; height: 100px; width: 100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
                      font-weight:bold;"  onmouseover="$(this).hover().css({'background-color': 'black', 'color':'white'})"

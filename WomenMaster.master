@@ -16,7 +16,7 @@
       }
        #Menmast tr td p a:hover{font-weight:bold;font-family:Arial, Helvetica, sans-serif;}
          .TM {
-             background-image: url(http://localhost:50981/WOMENPICS/w1.jpg);
+             background-image: url(http://localhost:49251/WOMENPICS/w1.jpg);
              background-repeat: no-repeat;
              background-size: contain;
          }
@@ -27,7 +27,7 @@
               top:150px;    
       }
          .TM2 {
-             background-image: url(http://localhost:50981/WOMENPICS/w2.jpg);
+             background-image: url(http://localhost:49251/WOMENPICS/w2.jpg);
              background-repeat: no-repeat;
              background-size: contain;
          }
@@ -41,7 +41,7 @@
              width:250px;
       }
          .TM3 {
-             background-image: url(http://localhost:50981/WOMENPICS/w3.jpg);
+             background-image: url(http://localhost:49251/WOMENPICS/w3.jpg);
              background-repeat: no-repeat;
              background-size: contain;
              width: 100%;
@@ -258,7 +258,7 @@ function topFunction() {
         </tr>
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA11.jpg); 
+                <div  style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA11.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -269,7 +269,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA12.jpg); 
+                <div style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA12.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -279,7 +279,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA13.jpg); 
+                <div style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA13.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -292,7 +292,7 @@ function topFunction() {
 
         <tr>
             <td>
-                <div  style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA21.jpg); 
+                <div  style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA21.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -303,7 +303,7 @@ function topFunction() {
             </td>
             
             <td>
-                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA22.jpg); 
+                <div style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA22.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;
@@ -313,7 +313,7 @@ function topFunction() {
                 </div>
             </td>
             <td>
-                <div style="background-image: url(http://localhost:50981/MenMasterPics/Women/FA23.jpg); 
+                <div style="background-image: url(http://localhost:49251/MenMasterPics/Women/FA23.jpg); 
                        background-repeat: no-repeat; background-size:cover;height:100px;width:100%;">
                     <a href="#">
                         <p style="height:30px;width:80px;background-color:white;color:black;margin-left:70%;top:60%;position:relative;

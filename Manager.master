@@ -33,8 +33,8 @@
                 <td style="color:white;">stfyfygkhghjfjfjff</td>
                 <td style="color:white;" >fjggkhgkhkjkjjhjh</td>
                 <td id="L"><p><a href="RegisterLogin.aspx"><span class="glyphicon glyphicon-user"></span>Log In</a></p></td>
-                <td id="W"> <p><a href="#"><span class="glyphicon glyphicon-heart"></span>Wishlist</a></p></td>
-                <td id="C"> <p><a href="#"><span class="glyphicon glyphicon-shopping-cart" ></span>Cart</a></p></td>
+                <td id="W"> <p><a href="RegisterLogin.aspx"><span class="glyphicon glyphicon-heart"></span>Wishlist</a></p></td>
+                <td id="C"> <p><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart" ></span>Cart</a></p></td>
             </tr>
         </table>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
