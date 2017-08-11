@@ -14,13 +14,21 @@
         #L p a {color:black;font-size:18px;text-decoration:none;padding-right:70px;font-weight:bolder;}
         #W p a {color:black;font-size:18px;text-decoration:none;padding-right:90px;font-weight:bolder;}
         #C p a {color:black;font-size:18px;text-decoration:none;padding-right:130px;font-weight:bolder;}
+       #shwCart{text-align:center;background-color:green;
+                height:20px;
+                width:40px;
+                border-radius:10px;
+       }
+       .itm{
+           }
     </style>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body >
     <form id="form1" runat="server">
    
         <table  style="margin-left:250px;">
@@ -34,7 +42,7 @@
                 <td style="color:white;" >fjggkhgkhkjkjjhjh</td>
                 <td id="L"><p><a href="RegisterLogin.aspx"><span class="glyphicon glyphicon-user"></span>Log In</a></p></td>
                 <td id="W"> <p><a href="RegisterLogin.aspx"><span class="glyphicon glyphicon-heart"></span>Wishlist</a></p></td>
-                <td id="C"> <p><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart" ></span>Cart</a></p></td>
+                <td id="C"><p><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart" ></span>Cart<span id="shwCart"> <asp:Label runat="server" ID="ItemsNo" CssClass="itm" ForeColor="White" Visible="false"></asp:Label></span>  </a></p></td>
             </tr>
         </table>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

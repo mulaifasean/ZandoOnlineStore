@@ -6,20 +6,34 @@
 <script type="text/javascript" src="magiczoom.js"></script>
    
     <style>
-        #PDet{visibility:hidden;}
-        #PDet{width:800px;
+        #PDet2{width:1000px;
+                         
+              margin-top:200px;
               margin-left:200px;
         }
-        #PDet tr td{width:400px;
-                    height:400px;
+        #PDet tr td{width:500px;
+                    height:500px;
+                    padding:30px;
         }
         #PDet tr td a{width:100%;height:100%;}
+        
+        .AddC{width:300PX;
+              height:70PX;
+              border:none;
+              background-color:darkorange;
+              color:white;
+              font-weight:bold;
+        }
+        .AddC:hover{border:2px solid darkorange;
+                color:darkorange;
+                background-color:white;
+        }
     </style>
     
     <script>
      
     </script>
-    <div>
+    <div id="PDet2">
         <table id="PDet" runat="server" >
             <tr>
                 <td>
@@ -34,6 +48,7 @@
                      <h3 id="name1" runat="server"></h3>
                      <h4 id="des1" runat="server"></h4>
                      <p id="price1" runat="server"></p>
+                    <asp:Button runat="server" ID="AddCart" Cssclass="AddC"    Text="ADD TO CART" OnClick="AddCart_Click"   /><br />
                 </td>
             </tr>
             <tr>

@@ -9,7 +9,7 @@
     <style>
        
         #PDet2{width:1000px;
-              height:700px;            
+                         
               margin-top:200px;
               margin-left:200px;
         }
@@ -29,11 +29,12 @@
                 color:darkorange;
                 background-color:white;
         }
+       
+        
     </style>
     
-    <script>
-     
-    </script>
+ 
+    
     <div id="PDet2">
         <table id="PDet" runat="server" >
             <tr>   
@@ -49,29 +50,17 @@
                      <h3 id="name1" runat="server"></h3>
                      <h4 id="des1" runat="server"></h4>
                      <p id="price1" runat="server"></p>
-                     <asp:Button runat="server" ID="AddCart" Cssclass="AddC"   Text="ADD TO CART" OnClick="AddCart_Click"  /><br />
-                     <asp:Button runat="server" ID="vwct" CssClass="AddC" Text="View Cart" OnClick="vwct_Click" /> 
+                     <asp:Button runat="server" ID="AddCart" Cssclass="AddC"    Text="ADD TO CART" OnClick="AddCart_Click"  /><br />
+                     
                 </td>
             </tr>
             <tr>
                 <td>
-                 
+                
                 </td>
             </tr>
         </table>
-       <asp:DataList runat="server" ID="d1" >
-        <HeaderTemplate>
-            <table>
-        </HeaderTemplate>
-
-        <ItemTemplate>
-             
-        </ItemTemplate>
-
-        <FooterTemplate>
-            </table>
- </FooterTemplate>
-    </asp:DataList>
+     
     </div>
 </asp:Content>
 

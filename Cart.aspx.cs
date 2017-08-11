@@ -14,54 +14,81 @@ public partial class Cart : System.Web.UI.Page
     string s;
     string t;
     string[] a = new string[6];
-    string ProductName, ProductDescription, Prod_qty, Price, Category, prod_image;
+   
+    int totale = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
         
-        TEST.Text = "These are your items";
-        TEST.Visible = true;
         
+       if(!IsPostBack)
+        {
+
+           
+            delv.Text = "<strong>Standard Delivery</strong>" +"  " +"<strong>FREE</strong>";
+           
+            delv.Visible = true;
+            
+            
+
+            //DISPLAY ITEMS  IN THE CART
+
+            DataTable dt2 = new DataTable();
+        dt2.Columns.AddRange(new DataColumn[5] { new DataColumn("Prod_qty"), new DataColumn("ProductDescription"), new DataColumn("Price"), new DataColumn("prod_image"), new DataColumn("ProductId") });
+
+        if (Request.Cookies["aa"] != null)
+        {
+            s = Convert.ToString(Request.Cookies["aa"].Value);
+
+            string[] strArr = s.Split('|');
+
+            for (int i = 0; i < strArr.Length; i++)
+            {
+                t = Convert.ToString(strArr[i].ToString());
+
+                string[] strArr1 = t.Split(',');
+                for (int j = 0; j < strArr1.Length; j++)
+                {
+                    a[j] = strArr1[j].ToString();
+                }
+                dt2.Rows.Add(a[0].ToString(), a[1].ToString(), a[2].ToString(), a[3].ToString(),i.ToString());
+                    //int qty = 1;
+                 totale = totale + (Convert.ToInt32(a[0].ToString()) * Convert.ToInt32(a[2].ToString()) );
+                    subtot.Text ="<strong>Subtotal</strong>"+"  "+"R"+ totale.ToString();
+                    tot.Text = "<strong>TOTAL</strong>" +"   "+"R"+totale.ToString();
+                  subtot.Visible = true;
+                    tot.Visible = true;
+
+
+                  
+            }
+        }
+
+        d1.DataSource = dt2;
+        d1.DataBind();
+        d1.Visible = true;
+
+
+
+
+        }
        
     }
 
-    protected void view_Click(object sender, EventArgs e)
-    {
-        
-        /*
-          DataTable dt2= new DataTable();
-          dt2.Columns.AddRange(new DataColumn[6] { new DataColumn("ProductName"), new DataColumn("ProductDescription"), new DataColumn("Prod_qty"), new DataColumn("Price"), new DataColumn("Category"), new DataColumn("prod_image") });
 
-          if(Request.Cookies!=null)
-          {
-              s = Convert.ToString(Request.Cookies["aa"].Value);
-              string[] strArr = s.Split('|');
-              for (int i = 0; i <strArr.Length; i++)
-              {
-                  t = Convert.ToString(strArr[i]);
-                  string[] strArr1 = t.Split(',');
-                  for (int j = 0; j <strArr1.Length; j++)
-                  {
-                      a[j] = strArr1[j].ToString();
-                  }
-              }
-          }
-
-          dt2.Rows.Add(a[0].ToString(), a[1].ToString(), a[2].ToString(), a[3].ToString(), a[4].ToString(), a[5].ToString());
-          d1.DataSource = dt2;
-          d1.DataBind();*/
- string s = Convert.ToString(Request.Cookies["aa"].Value);
-        string[] strArr = s.Split(',');
-        for (int i = 0; i < strArr.Length; i++)
-        {
-    viewcart.InnerHtml = strArr[0].ToString()+"  "+strArr[1].ToString() + "  " + strArr[2].ToString() + "  " + strArr[3].ToString() + " <br> " + strArr[4].ToString() + "  " + strArr[5].ToString() ;
-           
-            
-            //Response.Write(strArr[i].ToString());
-
-            // Response.Write("<br>");
-        }
-
-    }
     
+    /*
+    protected void qty_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int id = Convert.ToInt32(Request.QueryString["Id"].ToString());
+        SqlConnection objCon = new SqlConnection(connStr);
 
+        SqlCommand cmd = objCon.CreateCommand();
+        cmd.CommandType = CommandType.Text;
+         cmd.CommandText=   ("update Items set Prod_qty= @Prod_qty-"+ qty.Text);
+        objCon.Open();
+        cmd.ExecuteNonQuery();
+        objCon.Close();
+        Response.Redirect("Cart.aspx?Id"+id);
+    }
+    */
 }
