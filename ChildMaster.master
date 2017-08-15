@@ -96,7 +96,8 @@
      footer table tr #Fpics:hover>a{color:#ff6a00;}
 
      #DIV1{border-bottom:2px solid white;
-       margin-right:100px;    
+       margin-right:100px; 
+       
      }
      ul li table  {
          width:1200px;
@@ -633,12 +634,10 @@
            
              <li id="DIV1" class=" navbar-form navbar-right">
             <div style="color:white;"  class=" form-group">
-                Search:<input style="background-color:black;color:#808080; border:none;" type="text" placeholder="e.g Addidas" class="form-control" />
-            </div>
-            <button style="color:#ff6a00;background-color:black;border:none;" class="btn btn-default" >
-            <i  class=" glyphicon glyphicon-search"></i>
-            </button>
-           
+                Search:
+                <asp:textbox  class="form-control" placeholder="e.g Addidas"  style="background-color:black;color:#808080; border:none;"   runat="server"  ID="searchtxt"  ></asp:textbox>
+            </div>           
+                 <asp:button style="color:#ff6a00;background-color:black;border:none;" runat="server"  Text="Search"  CssClass=" glyphicon glyphicon-search" />  
         </li>
          </ul>
        

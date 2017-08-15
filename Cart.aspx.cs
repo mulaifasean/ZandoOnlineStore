@@ -75,7 +75,7 @@ public partial class Cart : System.Web.UI.Page
     }
 
 
-    
+
     /*
     protected void qty_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -91,4 +91,30 @@ public partial class Cart : System.Web.UI.Page
         Response.Redirect("Cart.aspx?Id"+id);
     }
     */
+
+    protected void d1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+        
+    }
+
+
+
+    protected void qty_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+        int id = Convert.ToInt32(Request.QueryString["Id"].ToString());
+        SqlConnection objCon = new SqlConnection(connStr);
+
+        SqlCommand cmd = objCon.CreateCommand();
+        cmd.CommandType = CommandType.Text;
+        cmd.CommandText = ("update Items set Prod_qty= @Prod_qty-");
+        objCon.Open();
+        cmd.ExecuteNonQuery();
+        objCon.Close();
+        Response.Redirect("Cart.aspx?Id" + id);
+
+    }
+
+  
 }

@@ -65,7 +65,7 @@
 
         <tr>
             <td id="le">
-                 <asp:DataList runat="server" ID="d1"  >
+                 <asp:DataList runat="server" ID="d1" OnSelectedIndexChanged="d1_SelectedIndexChanged"  >
         <HeaderTemplate>
             <table id="displayItems" >
  <tr style="height:50px;background-color:darkgrey;color:black;font-weight:bold;">
@@ -88,8 +88,8 @@
                      <p> <label>Size  :</label><span>8</span>  </p>
                      <div>
                          <label>Qty   :</label>
-                        <asp:DropDownList Width="50" runat="server" ID="qty">
-                             <asp:ListItem>1</asp:ListItem>
+                        <asp:DropDownList Width="50" runat="server"   ID="qty" AutoPostBack="True" OnSelectedIndexChanged="qty_SelectedIndexChanged">
+                             <asp:ListItem Selected="True">1</asp:ListItem>
                               <asp:ListItem>2</asp:ListItem>
                               <asp:ListItem>3</asp:ListItem>
                               <asp:ListItem>4</asp:ListItem>
@@ -131,7 +131,7 @@
                    <div id="shw">
                        <asp:TextBox ID="coupon" BorderColor="Silver" Height="30" runat="server"  placeholder="Coupon/Voucher Code"></asp:TextBox><asp:Button Height="30" CssClass="CVC" runat="server" Text="USE" />
                    </div>
-                 <br />  <asp:Button  runat="server" CssClass="secu" Text="SECURE CHECKOUT"/><br /><br />
+                 <br />  <asp:Button  runat="server" CssClass="secu" Text="SECURE CHECKOUT" /><br /><br />
                     <a href="landing.aspx" style="text-decoration:none;color:black;">Continue Shopping </a>
                 </div>
               
